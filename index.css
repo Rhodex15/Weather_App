@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form & Input Fields */
+.forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.forms input {
+    height: 45px;
+    flex: 1;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.forms input:focus {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+.forms button {
+    height: 45px;
+    padding: 0 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #20bf6b;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(32, 191, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+.forms button:hover {
+    background: #26de81;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(32, 191, 107, 0.5);
+}
+
+.forms button:active {
+    transform: translateY(0);
+}
+
+/* Weather Result Glassmorphism Card */
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 320px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.City {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.temp {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.temp::after {
+    content: "°C";
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.humidity {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.description {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+/* Error Message Styling */
+.error-msg {
+    color: #ff4d4d;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 100%;
+}
