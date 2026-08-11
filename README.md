@@ -56,5 +56,6 @@ No build step or dependencies required!
 3. Open in Browser:
 Simply double-click index.html or open it using a Live Server extension in your text editor (e.g., VS Code Live Server).
 
-##📸 Preview
+## 📸 Preview
+
 <img width="1260" height="893" alt="Image" src="https://github.com/user-attachments/assets/1cdfd7ab-7723-4e88-97d5-0fbbdfac73d9" />
